@@ -7,8 +7,8 @@ brs:
   failure:
     directory: <directory>
     cron:
-      min: 0 # midnight
-      dow: 1 # Monday
+      min:  0
+      hour: 0
     error:
       to: matt.shotwell@vumc.org 
       subject: "BRS Test Error"
