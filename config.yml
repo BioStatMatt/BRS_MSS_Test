@@ -10,14 +10,14 @@ brs:
       min: 0 # midnight
       dow: 1 # Monday
     error:
-      to: <error address> 
-      subject: <error subject> 
-      template: <error content>
+      to: matt.shotwell@vumc.org 
+      subject: "BRS Test Error"
+      template: "BRS Test report encountered an error."
     output:
       email:
-        to: <success address> 
-        subject: <success subject> 
-        template: <success content> 
+        to: matt.shotwell@vumc.org 
+        subject: "BRS Test" 
+        template: "Please see the attached BRS Test report." 
     command: Rscript render.R
     ext: html
     log: INFO
